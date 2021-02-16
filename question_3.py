@@ -3,9 +3,9 @@ def swap_pair(user_input):
     last_letter = ""
     list_word_char = [letter for letter in user_input]
     odd_char = [letter for letter in list_word_char[:-1:2]] #List comprehension does the same thing a a for loop but better. Example of a fore loop below
-    # odd_char
+    # odd_char = []
     # for letter in user_input[:-1:2]:
-    #   odd_char.append(letter)    
+    #   odd_char.append(letter)
     even_char = [letter for letter in list_word_char[1::2]]
     if len(user_input) % 2 == 1: #Checks to see if the the user word length is odd
         last_letter = list_word_char[-1]
